@@ -22,7 +22,7 @@ function CocktailDetails({ cockTailList }) {
           strMeasure1,
         } = x;
         return (
-          <>
+          <div key={x.idDrink}>
             <div className="cocktail-details">
               <h1>{strDrink}</h1>
               <img src={strDrinkThumb} width="200" alt="" />
@@ -59,7 +59,7 @@ function CocktailDetails({ cockTailList }) {
             <Link className="go-back" to="/">
               Go Back
             </Link>
-          </>
+          </div>
         );
       })}
     </div>

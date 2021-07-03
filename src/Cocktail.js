@@ -12,8 +12,8 @@ function Cocktail({ cockTailList }) {
           strCategory: type,
         } = x;
         return (
-          <>
-            <div key={x.idDrink} className="display-cocktail">
+          <div key={x.idDrink}>
+            <div className="display-cocktail">
               <img src={image} alt="" />
               <h1>{drink}</h1>
               <h3>{type}</h3>
@@ -22,7 +22,7 @@ function Cocktail({ cockTailList }) {
                 Details
               </Link>
             </div>
-          </>
+          </div>
         );
       })}
     </div>
