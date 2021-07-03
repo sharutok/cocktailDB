@@ -1,0 +1,141 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+$font-style-1: "Zen Loop", cursive;
+$font-style-2: "Exo", sans-serif;
+$font-style-3: "Amatic SC", cursive;
+
+.container {
+  display: grid;
+  grid-row-gap: 2rem;
+  text-align: center;
+  grid-template-columns: 20rem 20rem 20rem;
+  justify-content: center;
+}
+.display-cocktail {
+  background-color: rgb(232, 248, 243);
+  width: 250px;
+  padding-bottom: 0.4rem;
+  border-radius: 10px;
+  box-shadow: 12px 12px 10px grey;
+  img {
+    width: 100px;
+    border-radius: 5px;
+    min-width: 100%;
+    height: auto;
+  }
+  .details {
+    text-decoration: none;
+    background-color: cadetblue;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+  }
+  .details:hover {
+    color: cadetblue;
+    background-color: rgb(255, 255, 255);
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0.5rem;
+  }
+  h1 {
+    font-family: $font-style-2;
+    font-weight: bolder;
+  }
+  h3 {
+    font-family: $font-style-1;
+  }
+  h2 {
+    font-family: $font-style-3;
+  }
+}
+.search-input {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+  input {
+    box-shadow: 1px 3px 10px grey;
+    width: 300px;
+    border: 2px solid rgb(112, 112, 112);
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+$margin-left-heading-thumbnail: 7rem;
+$margin-content: 5rem;
+.cocktail-details {
+  h1 {
+    margin: 0;
+
+    margin-left: $margin-left-heading-thumbnail;
+    font-family: $font-style-2;
+    font-weight: bold;
+    font-size: 4rem;
+  }
+  img {
+    margin-left: $margin-left-heading-thumbnail;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 20px;
+  }
+  span {
+    font-family: $font-style-2;
+    color: royalblue;
+    font-weight: bold;
+    border-bottom: 2px dotted black;
+  }
+  h2 {
+    font-size: 1.7rem;
+    font-family: $font-style-3;
+  }
+}
+.cocktail-details-contents {
+  margin-left: $margin-content;
+}
+.go-back {
+  text-decoration: none;
+  background-color: cadetblue;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  margin-left: $margin-left-heading-thumbnail;
+  color: rgb(255, 255, 255);
+}
+.go-back:hover {
+  background-color: rgb(67, 170, 173);
+  color: rgb(255, 255, 255);
+}
+li {
+  font-size: 2rem;
+  font-family: $font-style-3;
+  font-weight: bold;
+}
+
+.no-more-cocktails {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Rubik Mono One", sans-serif;
+}
+.d {
+  color: fuchsia;
+}
+.r {
+  color: #ffeb00;
+}
+.i {
+  color: #ff3855;
+}
+.n {
+  color: #ccff00;
+}
+.k {
+  color: #ff681f;
+}
